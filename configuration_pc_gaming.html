@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10131b">
+<title>Configuration PC Gaming</title>
+<style>
+:root{--bg:#0b0e14;--panel:#141a24;--panel2:#1a2230;--line:#293344;--text:#f3f6fb;--muted:#9aa8bb;--accent:#8bd5ff;--accent2:#b7f0d0}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#26384b 0,transparent 45%),var(--bg);color:var(--text);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{max-width:1080px;margin:auto;padding:38px 22px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:30px}.brand{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:800}.tag{border:1px solid var(--line);border-radius:99px;padding:7px 12px;color:var(--muted);font-size:12px}
+h1{font-size:clamp(32px,6vw,56px);line-height:1.02;letter-spacing:-.045em;margin:0 0 12px}.intro{color:var(--muted);max-width:650px;margin:0 0 28px}
+.hero{background:linear-gradient(135deg,#1b2938,#121923 65%);border:1px solid #344457;border-radius:24px;padding:28px;display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:center;box-shadow:0 20px 60px #0005}
+.total-label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.12em}.total{font-size:clamp(34px,5vw,48px);font-weight:850;letter-spacing:-.04em;margin:5px 0}.subtotals{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:13px}.subtotals b{color:var(--text)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:#ffffff0a;border:1px solid #ffffff12;border-radius:15px;padding:14px}.stat strong{display:block;font-size:20px}.stat span{color:var(--muted);font-size:12px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:34px 0 14px}.section-head h2{margin:0;font-size:21px}.section-head p{margin:0;color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.item{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:17px;display:flex;gap:14px;align-items:center;min-width:0;transition:.18s}.item:hover{border-color:#6686a3;transform:translateY(-2px)}
+.icon{width:44px;height:44px;flex:0 0 44px;border-radius:13px;background:var(--panel2);display:grid;place-items:center;font-size:21px}
+.details{min-width:0;flex:1}.category{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-weight:800}.name{font-weight:700;margin:3px 0 2px;line-height:1.25}.spec{font-size:12px;color:var(--muted)}.price{font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums}.buy{display:inline-flex;margin-top:9px;color:var(--accent);font-size:12px;font-weight:750;text-decoration:none;border-bottom:1px solid #8bd5ff66;padding-bottom:1px}.buy:hover{color:white;border-color:white}
+.note{margin-top:20px;padding:16px 18px;border-radius:15px;background:#1b222d;border:1px solid var(--line);color:var(--muted);font-size:13px}.note strong{color:var(--text)}.footer{margin-top:30px;text-align:center;color:#748196;font-size:11px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.wrap{padding:24px 15px 42px}.top{align-items:flex-start}.section-head{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top"><div class="brand">PC BUILD · 2026</div><div class="tag">Configuration gaming · Blanc & RGB</div></div>
+  <h1>La configuration<br>Gaming.</h1>
+  <p class="intro">Tous les composants réunis au même endroit. Consulte les caractéristiques et ouvre chaque offre directement chez le marchand.</p>
+
+  <section class="hero">
+    <div>
+      <div class="total-label">Budget total avec écran</div>
+      <div class="total">1 720,10 €</div>
+      <div class="subtotals"><span>Tour : <b>1 554,11 €</b></span><span>Écran : <b>165,99 €</b></span></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>9</strong><span>éléments dans la tour</span></div>
+      <div class="stat"><strong>QHD</strong><span>2560 × 1440 · 260 Hz</span></div>
+    </div>
+  </section>
+
+  <div class="section-head"><h2>Les composants</h2><p>Prix indiqués lors de la création de cette page</p></div>
+  <section class="grid">
+    <article class="item"><div class="icon">🧠</div><div class="details"><div class="category">Processeur</div><div class="name">AMD Ryzen 5 9600X</div><div class="spec">6 cœurs · Socket AM5</div><a class="buy" href="https://www.amazon.fr/AMD-9600X-Processor-Integrated-Frequency/dp/B0D6NN6TM7" target="_blank" rel="noopener">Voir chez Amazon ↗</a></div><div class="price">149,00 €</div></article>
+
+    <article class="item"><div class="icon">🎮</div><div class="details"><div class="category">Carte graphique</div><div class="name">Gigabyte Radeon RX 9070 GRE Gaming OC</div><div class="spec">12 Go GDDR6 · PCIe 5.0</div><a class="buy" href="https://www.amazon.fr/-/en/GIGABYTE-Radeon-9070-Gaming-PCI/dp/B0H2W524DW" target="_blank" rel="noopener">Voir chez Amazon ↗</a></div><div class="price">709,99 €</div></article>
+
+    <article class="item"><div class="icon">🧩</div><div class="details"><div class="category">Mémoire vive</div><div class="name">Patriot Viper Venom DDR5 RGB</div><div class="spec">16 Go (1 × 16 Go) · 6000 MHz · CL30</div><a class="buy" href="https://www.amazon.de/dp/B0DJ1W694Y?_encoding=UTF8&th=1" target="_blank" rel="noopener">Voir chez Amazon Allemagne ↗</a></div><div class="price">267,90 €</div></article>
+
+    <article class="item"><div class="icon">💾</div><div class="details"><div class="category">Stockage</div><div class="name">Netac NVMe M.2 1 To</div><div class="spec">SSD PCIe 3.0 · jusqu'à 3500 Mo/s (annoncés)</div><a class="buy" href="https://fr.aliexpress.com/item/1005005445585329.html" target="_blank" rel="noopener">Voir chez AliExpress ↗</a></div><div class="price">116,39 €</div></article>
+
+    <article class="item"><div class="icon">❄️</div><div class="details"><div class="category">Refroidissement CPU</div><div class="name">Thermalright Peerless Assassin 120 SE</div><div class="spec">Double ventilateur · 6 caloducs</div><a class="buy" href="https://www.amazon.fr/-/en/Thermalright-Peerless-Assassin-TL-C12C-Technology/dp/B09NSTR7JZ/" target="_blank" rel="noopener">Voir chez Amazon ↗</a></div><div class="price">37,90 €</div></article>
+
+    <article class="item"><div class="icon">⚡</div><div class="details"><div class="category">Alimentation</div><div class="name">MSI MAG A650GLS</div><div class="spec">650 W · 80+ Gold · ATX 3.1</div><a class="buy" href="https://www.amazon.fr/-/en/MSI-compatible-dual-color-connector-embossed/dp/B0BX6MTYSC" target="_blank" rel="noopener">Voir chez Amazon ↗</a></div><div class="price">69,99 €</div></article>
+
+    <article class="item"><div class="icon">🖥️</div><div class="details"><div class="category">Boîtier</div><div class="name">Corsair Frame 4500X RS-R ARGB</div><div class="spec">Blanc · Verre panoramique</div><a class="buy" href="https://www.amazon.fr/-/en/CORSAIR-Frame-4500X-Panoramic-Medium/dp/B0FJ2PYLFB/" target="_blank" rel="noopener">Voir chez Amazon ↗</a></div><div class="price">67,99 €</div></article>
+
+    <article class="item"><div class="icon">🔧</div><div class="details"><div class="category">Carte mère</div><div class="name">Colorful CVN B650M Gaming Frozen V14</div><div class="spec">Micro-ATX · DDR5 · Wi-Fi 6 · PCB blanc</div><a class="buy" href="https://www.joybuy.fr/dp/colorful-cvn-b650m-gaming-frozen-v14/10491974" target="_blank" rel="noopener">Voir chez Joybuy ↗</a></div><div class="price">94,99 €</div></article>
+
+    <article class="item"><div class="icon">🌬️</div><div class="details"><div class="category">Ventilateurs supplémentaires</div><div class="name">Corsair RS120 ARGB Blanc</div><div class="spec">4 × 120 mm · PWM · 9,99 € l'unité</div><a class="buy" href="https://www.amazon.fr/-/en/CORSAIR-RS120-ARGB-120mm-Fans/dp/B0D49PZ1HM" target="_blank" rel="noopener">Voir chez Amazon ↗</a></div><div class="price">39,96 €</div></article>
+
+    <article class="item"><div class="icon">🖥️</div><div class="details"><div class="category">Écran</div><div class="name">AOC Gaming Q27G42ZE</div><div class="spec">27 pouces · QHD · Fast IPS · 260 Hz</div><a class="buy" href="https://www.amazon.fr/gp/product/B0F5BTTM66" target="_blank" rel="noopener">Voir chez Amazon ↗</a></div><div class="price">165,99 €</div></article>
+  </section>
+
+  <div class="note"><strong>À noter :</strong> la mémoire indiquée est une seule barrette de 16 Go (1 × 16 Go), et non un kit 2 × 16 Go. Les prix sont ceux communiqués pour cette configuration et peuvent évoluer chez les marchands.</div>
+  <div class="footer">Fiche de configuration PC · Liens marchands fournis pour cette sélection</div>
+</main>
+</body>
+</html>
