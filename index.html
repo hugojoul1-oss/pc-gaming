@@ -24,7 +24,8 @@ h1{font-size:clamp(32px,6vw,56px);line-height:1.02;letter-spacing:-.045em;margin
 body{position:relative;isolation:isolate;background:radial-gradient(ellipse at 50% -20%,#26384b 0,transparent 45%),var(--bg)}
 .joke-wallpaper{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.42}
 @media(max-width:700px){
-  .joke-wallpaper{opacity:.28;transform:translateX(-115px) scale(1.12);transform-origin:center center}
+  .joke-wallpaper{opacity:.42;transform:translateX(-115px) scale(1.12);transform-origin:center center}
+  body::after{content:"";display:block;height:100svh;min-height:620px}
 }
 
 </style>
@@ -101,6 +102,28 @@ body{position:relative;isolation:isolate;background:radial-gradient(ellipse at 5
 <path d="M1055 655L1015 735Q1000 760 1030 770L1095 755L1130 675" fill="url(#skin)" stroke="#b97862" stroke-width="4"/>
 <path d="M1170 655L1200 725Q1215 750 1190 770L1130 760L1110 690" fill="url(#skin)" stroke="#b97862" stroke-width="4"/>
 <path d="M1015 755Q1045 765 1090 750M1135 755Q1170 770 1200 748" fill="none" stroke="#e5b89c" stroke-width="7" stroke-linecap="round"/>
+<!-- détails supplémentaires : parquet, lampe, plis et coutures pour enrichir la scène -->
+<g opacity=".5" fill="none" stroke-linecap="round">
+  <path d="M0 820L590 820M0 865L590 865M80 900L210 820M280 900L390 820M460 900L560 820" stroke="#172432" stroke-width="5"/>
+  <path d="M640 648Q710 668 785 650M650 690Q735 712 820 690M1210 680Q1290 700 1365 675" stroke="#b5a5a0" stroke-width="4"/>
+  <path d="M700 600Q740 615 780 602M1290 605Q1320 620 1350 606" stroke="#fff" stroke-width="3"/>
+  <path d="M1035 455Q1080 470 1100 455M1160 455Q1190 470 1210 460" stroke="#d7eeee" stroke-width="3"/>
+  <path d="M1060 485L1070 555M1188 485L1200 555" stroke="#426b78" stroke-width="3"/>
+  <path d="M1065 285Q1080 260 1100 254M1135 245Q1170 250 1185 275M1045 315Q1050 290 1065 278" stroke="#76505a" stroke-width="5"/>
+  <path d="M865 345Q875 335 887 338M948 343Q960 335 972 342" stroke="#2b2024" stroke-width="3"/>
+</g>
+<!-- lampe de chevet et petits objets de décor -->
+<g>
+  <rect x="470" y="470" width="88" height="105" rx="7" fill="#4b5662" stroke="#263442" stroke-width="5"/>
+  <path d="M480 470L492 405Q515 385 538 405L550 470Z" fill="#e8d9bd" stroke="#8e887d" stroke-width="5"/>
+  <path d="M514 470V510" stroke="#d6c7a8" stroke-width="7"/>
+  <circle cx="514" cy="515" r="9" fill="#d8b977"/>
+  <path d="M490 430Q514 418 540 430" fill="none" stroke="#fff5dc" stroke-width="4" opacity=".7"/>
+  <rect x="485" y="575" width="58" height="9" rx="4" fill="#263442"/>
+</g>
+<!-- ombres douces au contact des corps et du matelas -->
+<ellipse cx="1090" cy="605" rx="235" ry="32" fill="#66545a" opacity=".16"/>
+<ellipse cx="920" cy="590" rx="125" ry="24" fill="#66545a" opacity=".18"/>
 <text x="1040" y="855" font-family="Arial,sans-serif" font-size="26" font-weight="700" fill="#fff0e8" opacity=".9">Oups…</text>
 </svg>
 <main class="wrap">
