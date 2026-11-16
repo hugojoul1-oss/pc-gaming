@@ -30,7 +30,7 @@ body::after{content:"";display:block;height:100svh;min-height:700px}
   .joke-wallpaper{display:none}
   .joke-wallpaper-mobile{
     display:block;position:fixed;inset:0;width:100%;height:100svh;
-    opacity:.92;z-index:-1;pointer-events:none;transform:none
+    opacity:.72;z-index:-1;pointer-events:none;transform:none
   }
   body::after{height:120svh;min-height:760px}
 }
@@ -135,12 +135,12 @@ body::after{content:"";display:block;height:100svh;min-height:700px}
 </svg>
 <svg class="joke-wallpaper-mobile" viewBox="600 100 800 900" preserveAspectRatio="xMidYMid meet" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
 <defs>
- <linearGradient id="room" x2="0" y2="1"><stop stop-color="#718398"/><stop offset="1" stop-color="#344253"/></linearGradient>
- <linearGradient id="mattress" x2="0" y2="1"><stop stop-color="#fffaf4"/><stop offset="1" stop-color="#d7c9c4"/></linearGradient>
- <linearGradient id="skin" x2="0" y2="1"><stop stop-color="#f5c9a8"/><stop offset="1" stop-color="#c88769"/></linearGradient>
- <linearGradient id="shirt" x2="0" y2="1"><stop stop-color="#a9d1d7"/><stop offset="1" stop-color="#648d9b"/></linearGradient>
+ <linearGradient id="room-mobile" x2="0" y2="1"><stop stop-color="#718398"/><stop offset="1" stop-color="#344253"/></linearGradient>
+ <linearGradient id="mattress-mobile" x2="0" y2="1"><stop stop-color="#fffaf4"/><stop offset="1" stop-color="#d7c9c4"/></linearGradient>
+ <linearGradient id="skin-mobile" x2="0" y2="1"><stop stop-color="#f5c9a8"/><stop offset="1" stop-color="#c88769"/></linearGradient>
+ <linearGradient id="shirt-mobile" x2="0" y2="1"><stop stop-color="#a9d1d7"/><stop offset="1" stop-color="#648d9b"/></linearGradient>
 </defs>
-<rect width="1400" height="900" fill="url(#room)"/>
+<rect width="1400" height="900" fill="url(#room-mobile)"/>
 <path d="M0 0H1400V560H0Z" fill="#263647" opacity=".25"/>
 <rect x="850" y="95" width="330" height="255" rx="12" fill="#26394a" stroke="#d2d8d4" stroke-width="10"/>
 <rect x="870" y="115" width="290" height="215" fill="#d4e0df"/>
@@ -150,7 +150,7 @@ body::after{content:"";display:block;height:100svh;min-height:700px}
 <path d="M1268 320V490" stroke="#5a4439" stroke-width="5"/>
 <!-- lit, cadre et matelas bien lisibles -->
 <rect x="590" y="570" width="810" height="245" rx="25" fill="#4d3e43"/>
-<path d="M615 590Q820 550 1030 580Q1230 545 1380 590V748Q1190 790 1000 755Q790 790 615 745Z" fill="url(#mattress)" stroke="#b8a9a4" stroke-width="6"/>
+<path d="M615 590Q820 550 1030 580Q1230 545 1380 590V748Q1190 790 1000 755Q790 790 615 745Z" fill="url(#mattress-mobile)" stroke="#b8a9a4" stroke-width="6"/>
 <path d="M640 612Q830 578 1010 605Q1210 570 1360 610" fill="none" stroke="#fff" stroke-width="9" opacity=".7"/>
 <path d="M670 625Q730 650 795 625M1260 620Q1310 650 1360 628" fill="none" stroke="#c9b9b2" stroke-width="4"/>
 <rect x="615" y="735" width="765" height="78" rx="12" fill="#70535a"/>
@@ -165,8 +165,8 @@ body::after{content:"";display:block;height:100svh;min-height:700px}
 <g>
   <path d="M800 470Q825 415 900 410Q975 405 1015 455L1040 590Q950 625 825 590Z" fill="#252c38" stroke="#151b25" stroke-width="5"/>
   <path d="M835 455Q855 420 900 420Q945 420 972 455L950 490Q900 505 850 485Z" fill="#303b4b"/>
-  <path d="M900 395L900 420Q925 438 950 415L948 390Z" fill="url(#skin)"/>
-  <ellipse cx="922" cy="355" rx="62" ry="73" fill="url(#skin)" stroke="#bd8065" stroke-width="3"/>
+  <path d="M900 395L900 420Q925 438 950 415L948 390Z" fill="url(#skin-mobile)"/>
+  <ellipse cx="922" cy="355" rx="62" ry="73" fill="url(#skin-mobile)" stroke="#bd8065" stroke-width="3"/>
   <path d="M858 344Q862 286 918 278Q977 280 985 342L965 329Q925 310 875 340Z" fill="#17191d" stroke="#08090b" stroke-width="4"/>
   <path d="M860 333Q910 315 975 337Q1005 345 1018 360Q960 375 888 359Z" fill="#17191d" stroke="#08090b" stroke-width="4"/>
   <path d="M875 300L885 285L900 300L915 284L930 300L945 286L960 303" fill="none" stroke="#b99a55" stroke-width="4"/>
@@ -174,13 +174,13 @@ body::after{content:"";display:block;height:100svh;min-height:700px}
   <path d="M890 360Q902 354 912 360M936 360Q948 354 958 360" fill="none" stroke="#563e3b" stroke-width="4" stroke-linecap="round"/>
   <path d="M919 365Q912 382 922 386" fill="none" stroke="#b97862" stroke-width="3"/>
   <path d="M905 399Q923 408 941 397" fill="none" stroke="#984e54" stroke-width="4" stroke-linecap="round"/>
-  <path d="M842 470Q800 505 785 560" fill="none" stroke="url(#skin)" stroke-width="31" stroke-linecap="round"/>
+  <path d="M842 470Q800 505 785 560" fill="none" stroke="url(#skin-mobile)" stroke-width="31" stroke-linecap="round"/>
   <path d="M785 560Q780 580 800 586" fill="none" stroke="#b97862" stroke-width="4"/>
 </g>
 <!-- silhouette de la femme assise sur le bord du lit -->
 <path d="M1000 350Q990 255 1070 220Q1165 185 1230 270Q1265 330 1225 430L1190 475L1025 440Z" fill="#49343b"/>
-<path d="M1080 395L1080 445Q1115 470 1150 440L1140 385Z" fill="url(#skin)"/>
-<ellipse cx="1120" cy="345" rx="76" ry="90" fill="url(#skin)" stroke="#bd8065" stroke-width="3"/>
+<path d="M1080 395L1080 445Q1115 470 1150 440L1140 385Z" fill="url(#skin-mobile)"/>
+<ellipse cx="1120" cy="345" rx="76" ry="90" fill="url(#skin-mobile)" stroke="#bd8065" stroke-width="3"/>
 <path d="M1045 338Q1025 270 1085 235Q1165 198 1210 275Q1230 320 1198 370Q1180 310 1145 294Q1095 320 1050 300Z" fill="#49343b"/>
 <path d="M1050 340Q1025 395 1065 440Q1018 415 1018 350ZM1190 315Q1230 365 1195 430Q1238 390 1220 330Z" fill="#49343b"/>
 <path d="M1080 347Q1095 338 1110 347M1145 347Q1160 338 1175 347" fill="none" stroke="#563e3b" stroke-width="5" stroke-linecap="round"/>
@@ -189,19 +189,19 @@ body::after{content:"";display:block;height:100svh;min-height:700px}
 <path d="M1100 397Q1125 411 1150 394" fill="none" stroke="#984e54" stroke-width="5" stroke-linecap="round"/>
 <circle cx="1070" cy="380" r="10" fill="#df8c83" opacity=".4"/><circle cx="1180" cy="380" r="10" fill="#df8c83" opacity=".4"/>
 <!-- pyjama manches longues -->
-<path d="M1050 430Q1080 405 1120 420Q1170 405 1200 440L1250 585Q1160 625 1000 585L1030 470Z" fill="url(#shirt)" stroke="#456d7a" stroke-width="5"/>
+<path d="M1050 430Q1080 405 1120 420Q1170 405 1200 440L1250 585Q1160 625 1000 585L1030 470Z" fill="url(#shirt-mobile)" stroke="#456d7a" stroke-width="5"/>
 <path d="M1110 420L1125 485L1150 422" fill="#e9f1ec" stroke="#527985" stroke-width="4"/>
 <path d="M1070 450L1080 570M1180 450L1170 570" stroke="#e3eeee" stroke-width="3" opacity=".55"/>
-<path d="M1050 465Q1005 495 965 580" fill="none" stroke="url(#skin)" stroke-width="35" stroke-linecap="round"/>
-<path d="M1195 465Q1235 505 1270 575" fill="none" stroke="url(#skin)" stroke-width="35" stroke-linecap="round"/>
+<path d="M1050 465Q1005 495 965 580" fill="none" stroke="url(#skin-mobile)" stroke-width="35" stroke-linecap="round"/>
+<path d="M1195 465Q1235 505 1270 575" fill="none" stroke="url(#skin-mobile)" stroke-width="35" stroke-linecap="round"/>
 <path d="M965 580Q980 590 995 578M1270 575Q1285 588 1300 578" fill="none" stroke="#b97862" stroke-width="3"/>
 <!-- son bras passe naturellement autour de la taille de la femme -->
-<path d="M955 472Q1000 485 1028 510Q1060 532 1100 520" fill="none" stroke="url(#skin)" stroke-width="28" stroke-linecap="round"/>
-<path d="M1085 513Q1105 500 1120 514Q1128 528 1110 538Q1095 541 1085 526Z" fill="url(#skin)" stroke="#b97862" stroke-width="3"/>
+<path d="M955 472Q1000 485 1028 510Q1060 532 1100 520" fill="none" stroke="url(#skin-mobile)" stroke-width="28" stroke-linecap="round"/>
+<path d="M1085 513Q1105 500 1120 514Q1128 528 1110 538Q1095 541 1085 526Z" fill="url(#skin-mobile)" stroke="#b97862" stroke-width="3"/>
 <!-- pantalon et jambes -->
 <path d="M1030 575Q1100 600 1215 575L1230 670Q1185 700 1145 665L1110 620L1085 680Q1045 700 1000 670Z" fill="#657b91" stroke="#43576b" stroke-width="5"/>
-<path d="M1055 655L1015 735Q1000 760 1030 770L1095 755L1130 675" fill="url(#skin)" stroke="#b97862" stroke-width="4"/>
-<path d="M1170 655L1200 725Q1215 750 1190 770L1130 760L1110 690" fill="url(#skin)" stroke="#b97862" stroke-width="4"/>
+<path d="M1055 655L1015 735Q1000 760 1030 770L1095 755L1130 675" fill="url(#skin-mobile)" stroke="#b97862" stroke-width="4"/>
+<path d="M1170 655L1200 725Q1215 750 1190 770L1130 760L1110 690" fill="url(#skin-mobile)" stroke="#b97862" stroke-width="4"/>
 <path d="M1015 755Q1045 765 1090 750M1135 755Q1170 770 1200 748" fill="none" stroke="#e5b89c" stroke-width="7" stroke-linecap="round"/>
 <!-- détails supplémentaires : parquet, lampe, plis et coutures pour enrichir la scène -->
 <g opacity=".5" fill="none" stroke-linecap="round">
